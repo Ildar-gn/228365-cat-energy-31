@@ -39,6 +39,7 @@
 
   <main>
     <h1 class="visually-hidden">Каталог магазина кормов для котов и кошек Cat Energy</h1>
+    <!-- main products -->
     <section class="products">
       <div class="container">
         <h2 class="products__title title">Каталог продукции</h2>
@@ -53,7 +54,7 @@
             <dl class="product-card__list">
               <div class="product-card__item">
                 <dt class="product-card__term">Масса</dt>
-                <dd class="product-card__definition">500 г.</dd>
+                <dd class="product-card__definition">100 г.</dd>
               </div>
               <div class="product-card__item">
                 <dt class="product-card__term">Вкус</dt>
@@ -214,6 +215,99 @@
         </div>
       </div>
     </section>
+    <!-- additional products -->
+    <section class="additional-products">
+      <div class="container">
+        <h2 class="additional-products__title title">Дополнительные товары</h2>
+        <div class="additional-products__list">
+          <article class="product-card product-card--simple">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="#" tabindex="-1">Сахарозаменитель</a>
+            </h3>
+            <dl class="product-card__list">
+              <div class="product-card__item">
+                <dt class="visually-hidden">Масса</dt>
+                <dd class="product-card__definition">1 упаковка (100 г)</dd>
+              </div>
+              <div class="product-card__item">
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="product-card__definition">200 ₽</dd>
+              </div>
+            </dl>
+            <a class="product-card__button button button--primary" href="#">Заказать</a>
+          </article>
+          <article class="product-card product-card--simple">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="#" tabindex="-1">Питьевая вода</a>
+            </h3>
+            <dl class="product-card__list">
+              <div class="product-card__item">
+                <dt class="visually-hidden">Объём</dt>
+                <dd class="product-card__definition">5 литров</dd>
+              </div>
+              <div class="product-card__item">
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="product-card__definition">50 ₽</dd>
+              </div>
+            </dl>
+            <a class="product-card__button button button--primary" href="#">Заказать</a>
+          </article>
+          <article class="product-card product-card--simple">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="#" tabindex="-1">Молоко</a>
+            </h3>
+            <dl class="product-card__list">
+              <div class="product-card__item">
+                <dt class="visually-hidden">Объём</dt>
+                <dd class="product-card__definition">1 литр</dd>
+              </div>
+              <div class="product-card__item">
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="product-card__definition">100 ₽</dd>
+              </div>
+            </dl>
+            <a class="product-card__button button button--primary" href="#">Заказать</a>
+          </article>
+          <article class="product-card product-card--simple">
+            <h3 class="product-card__title">
+              <a class="product-card__link" href="#" tabindex="-1">Витамины</a>
+            </h3>
+            <dl class="product-card__list">
+              <div class="product-card__item">
+                <dt class="visually-hidden">Масса</dt>
+                <dd class="product-card__definition">1 упаковка (30 г)</dd>
+              </div>
+              <div class="product-card__item">
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="product-card__definition">300 ₽</dd>
+              </div>
+            </dl>
+            <a class="product-card__button button button--primary" href="#">Заказать</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- banner -->
+    <article class="banner container">
+      <h2 class="visually-hidden">Подарок</h2>
+      <p class="banner__description">Закажите все и получите чехол для кота в подарок!</p>
+    </article>
+    <!-- promo -->
+    <section class="promo">
+      <div class="container">
+        <h2 class="promo__title title">Акции и новинки</h2>
+        <p class="promo__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+        <!-- form -->
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="form__wrapper">
+            <label class="visually-hidden" for="subscribe-field">Введите вашу электронную почту</label>
+            <input class="form__field field" type="email" id="subscribe-field" name="e-mail" placeholder="kuklachev@gmail.com" autocomplete="email" required>
+          </p>
+          <button class="form__button button button--primary" type="submit">Подписаться</button>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
@@ -228,14 +322,14 @@
       <!-- map -->
       <div class="map">
         <span class="visually-hidden">Наше местоположение на карте</span>
-        <iframe width="100%" height="100%" frameborder="0" loading="lazy"></iframe>
+        <iframe width="100%" height="100%" frameborder="0" allowfullscreen loading="lazy"></iframe>
         <div class="map__image-wrapper">
           <img class="map__image" width="320" height="362" src="images/" alt="" aria-hidden="true">
         </div>
       </div>
     </section>
 
-    <div class="footer__bottom">
+    <div class="footer__secondary">
       <div class="container">
         <a class="footer__logo logo" href="#" aria-current="page">
           <img class="logo__title" width="128" height="24" src="images/" alt="Логотип магазина для котов Cat Energy">
