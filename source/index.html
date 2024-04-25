@@ -143,12 +143,14 @@
       <!-- map -->
       <div class="map">
         <span class="visually-hidden">Наше местоположение на карте</span>
-        <iframe class="map_frame" width="1440" height="400" allowfullscreen loading="lazy"></iframe>
-        <picture>
-          <source width="1440" height="400" media="(min-width: 1280px)" srcset="images/map/map__image_large@1x.jpg 1x, images/map/map__image_large@2x.jpg 2x" type="image/jpeg">
-          <source width="768" height="400" media="(min-width: 768px)" srcset="images/map/map__image_medium@1x.jpg 1x, images/map/map__image_medium@2x.jpg 2x" type="image/jpeg">
-          <img class="map__image" width="320" height="362" src="images/map/map__image_small@1x.jpg" srcset="images/map/map__image_small@2x.jpg 2x" alt="" aria-hidden="true">
-        </picture>
+        <iframe class="map__frame" width="1440" height="400" allowfullscreen loading="lazy" title="Карта с нашим местоположением"></iframe>
+        <div class="map__fallback visually-hidden">
+          <picture>
+            <source width="1440" height="400" media="(min-width: 1280px)" srcset="images/map/map__image_large@1x.jpg 1x, images/map/map__image_large@2x.jpg 2x" type="image/jpeg">
+            <source width="768" height="400" media="(min-width: 768px)" srcset="images/map/map__image_medium@1x.jpg 1x, images/map/map__image_medium@2x.jpg 2x" type="image/jpeg">
+            <img class="map__image" width="320" height="362" src="images/map/map__image_small@1x.jpg" srcset="images/map/map__image_small@2x.jpg 2x" alt="Карта с нашим местоположением">
+          </picture>
+        </div>
       </div>
     </section>
 
