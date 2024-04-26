@@ -42,7 +42,7 @@ img {
 
 body {
   margin: 0;
-  font-family: var(--font-basic);
+  font-family: $font-basic;
   line-height: 1.29;
-  color: var(--color-primary);
+  color: $color-primary;
 }
