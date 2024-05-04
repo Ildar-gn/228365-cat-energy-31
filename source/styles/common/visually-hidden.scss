@@ -1,14 +1,4 @@
 .visually-hidden {
   position: absolute;
-  width: 0.01rem;
-  height: 0.01rem;
-  margin: -0.02rem;
-  left: 0;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
   transform: scale(0);
 }

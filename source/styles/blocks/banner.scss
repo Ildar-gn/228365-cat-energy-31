@@ -1,0 +1,11 @@
+.banner {
+  background-color: var(--color-accent, inherit);
+  padding: 58px;
+}
+
+.banner__description {
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--color-light, inherit);
+}
