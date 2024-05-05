@@ -22,6 +22,8 @@
 }
 
 .contacts__address {
+  display: flex;
+  flex-direction: column;
   line-height: 1.42;
   font-style: normal;
 }
