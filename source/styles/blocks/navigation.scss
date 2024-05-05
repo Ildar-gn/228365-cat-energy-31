@@ -11,7 +11,7 @@
   position: absolute;
   flex-direction: column;
   background-color: var(--color-light, inherit);
-  top: 68px;
+  top: 7.8%;
   left: 0;
   width: 100%;
   text-align: center;
@@ -19,18 +19,19 @@
   transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
   transition-delay: 0s, 0.3s;
   z-index: 2;
+
+  &--open {
+    transform: scaleY(1) translateY(0%);
+    opacity: 1;
+  }
+
+  &--close {
+    transform: scaleY(0) translateY(-100%);
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
-.navigation__list--open {
-  transform: scaleY(1);
-  opacity: 1;
-}
-
-.navigation__list--close {
-  transform: scaleY(0) translateY(-100%);
-  opacity: 0;
-  z-index: -1;
-}
 
 .navigation__item {
   //
