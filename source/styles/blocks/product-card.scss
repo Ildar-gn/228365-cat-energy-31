@@ -18,10 +18,25 @@
   margin-bottom: 14px;
   grid-row: 1 / 2;
   grid-column: 2 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
   color: var(--color-dark-200, inherit);
+
+  &--icon-plus::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 23px;
+    background-image: url("../../icons/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
 }
 
 .product-card__link {

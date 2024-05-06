@@ -27,21 +27,27 @@
     height: 60px;
     flex-shrink: 0;
     background-color: var(--color-accent, inherit);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    &--healthy {
-      //
-    }
+  &--healthy::before {
+    background-image: url("../../icons/icon-leaf.svg");
+    background-size: 25px auto;
+  }
 
-    &--cook {
-      //
-    }
+  &--cook::before {
+    background-image: url("../../icons/icon-cook.svg");
+    background-size: 26px auto;
+  }
 
-    &--portions {
-      //
-    }
+  &--portions::before {
+    background-image: url("../../icons/icon-eat.svg");
+    background-size: 25px auto;
+  }
 
-    &--results {
-      //
-    }
+  &--results::before {
+    background-image: url("../../icons/icon-results.svg");
+    background-size: 26px auto;
   }
 }
