@@ -1,5 +1,9 @@
 .additional-products {
   padding-block: 10px 20px;
+  background-image: linear-gradient(var(--color-accent, inherit), var(--color-accent, inherit));
+  background-repeat: no-repeat;
+  background-position: left 0 top 20px;
+  background-size: 100% 2px;
 }
 
 .additional-products__container {
@@ -8,7 +12,9 @@
 }
 
 .additional-products__title {
+  width: max-content;
   font-size: 24px;
+  box-shadow: -40px 0 0 0 var(--color-light,), 40px 0 0 0 var(--color-light,), inset 0 0 0 40px var(--color-light,);
 }
 
 .additional-products__list {

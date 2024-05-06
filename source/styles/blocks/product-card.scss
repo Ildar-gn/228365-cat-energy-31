@@ -20,14 +20,18 @@
   grid-column: 2 / -1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  row-gap: 23px;
+  align-items: start;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
   color: var(--color-dark-200, inherit);
 
-  &--icon-plus::before {
+  &--more {
+    align-items: center;
+    row-gap: 23px;
+  }
+
+  &--more::before {
     content: "";
     display: block;
     width: 30px;

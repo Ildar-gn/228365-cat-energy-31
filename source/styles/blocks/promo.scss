@@ -1,10 +1,16 @@
 .promo {
   padding-block: 20px 40px;
+  background-image: linear-gradient(var(--color-accent, inherit), var(--color-accent, inherit));
+  background-repeat: no-repeat;
+  background-position: left 0 top 30px;
+  background-size: 100% 2px;
 }
 
 .promo__title {
+  width: max-content;
   margin-bottom: 32px;
   font-size: 24px;
+  box-shadow: -40px 0 0 0 var(--color-light,), 40px 0 0 0 var(--color-light,), inset 0 0 0 40px var(--color-light,);
 }
 
 .promo__description {
