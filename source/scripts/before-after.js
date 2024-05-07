@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const slider = document.querySelector('.before-after__handle');
   const beforeImage = document.querySelector('.before-after__image--before');
   const afterImage = document.querySelector('.before-after__image--after');
-  const sliderWrapper = document.querySelector('.before-after__slider-wrapper');
+  const sliderWrapper = document.querySelector('.before-after__handle-wrapper');
 
   // Функция для обновления clip-path
   function updateClipPath(newLeft) {
