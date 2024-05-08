@@ -341,13 +341,14 @@
       <!-- map -->
       <div class="map">
         <span class="visually-hidden">Наше местоположение на карте</span>
-        <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e01fcb9e2d8c07c526bb53341fe31b72de6b512a0f40072987b74fc0b1c7dca&amp;source=constructor" width="100%" height="400" allowfullscreen loading="lazy" title="Карта с нашим местоположением" frameborder="0"></iframe>
-        <picture>
-          <source width="1440" height="400" media="(min-width: 1280px)" srcset="images/map/map__image_large@1x.jpg 1x, images/map/map__image_large@2x.jpg 2x" type="image/jpeg">
-          <source width="768" height="400" media="(min-width: 768px)" srcset="images/map/map__image_medium@1x.jpg 1x, images/map/map__image_medium@2x.jpg 2x" type="image/jpeg">
-          <img class="map__image" width="320" height="362" src="images/map/map__image_small@1x.jpg" srcset="images/map/map__image_small@2x.jpg 2x" alt="Карта с нашим местоположением" loading="lazy">
-        </picture>
-      </div>
+        <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e01fcb9e2d8c07c526bb53341fe31b72de6b512a0f40072987b74fc0b1c7dca&amp;source=constructor" width="1440" height="400" allowfullscreen loading="lazy" title="Карта с нашим местоположением"></iframe>
+        <div class="map__fallback">
+          <picture>
+            <source width="1440" height="400" media="(min-width: 1280px)" srcset="images/map/map__image_large@1x.jpg 1x, images/map/map__image_large@2x.jpg 2x" type="image/jpeg">
+            <source width="768" height="400" media="(min-width: 768px)" srcset="images/map/map__image_medium@1x.jpg 1x, images/map/map__image_medium@2x.jpg 2x" type="image/jpeg">
+            <img class="map__image" width="320" height="362" src="images/map/map__image_small@1x.jpg" srcset="images/map/map__image_small@2x.jpg 2x" alt="Карта с нашим местоположением" loading="lazy">
+          </picture>
+        </div>
       </div>
     </section>
 
