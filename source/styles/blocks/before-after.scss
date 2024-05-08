@@ -10,15 +10,14 @@
   height: auto;
 }
 
-.before-after__image-wrapper {
-  grid-column: 1 / -1;
-  grid-row: 1;
-  padding: 0;
-  margin: 0;
+.before-after picture {
+  display: contents;
 }
 
 .before-after__image {
   display: block;
+  grid-column: 1 / -1;
+  grid-row: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
