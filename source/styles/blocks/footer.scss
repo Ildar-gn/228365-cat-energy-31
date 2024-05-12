@@ -8,6 +8,10 @@
   @include tablet {
     padding-block: 55px;
   }
+
+  @include desktop {
+    padding-block: 66px;
+  }
 }
 
 .footer__container {
