@@ -1,17 +1,12 @@
 .program {
-  padding: 24px 20px 18px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 22px 20px;
+  flex-grow: 1;
+  flex-basis: clamp(280px, 6vw, 300px);
+  padding-block: 24px;
+  padding-inline: 20px;
   background-color: var(--color-secondary-light, inherit);
-}
-
-.program__title {
-  display: flex;
-  align-items: center;
-  column-gap: 20px;
-  margin-bottom: 22px;
-  font-size: 24px;
-  line-height: 1.54;
-  text-transform: uppercase;
-  color: var(--color-dark, inherit);
 
   &::before {
     content: "";
@@ -21,6 +16,38 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr auto;
+    padding-block: 77px 53px;
+    padding-inline: 52px 63px;
+    gap: 24px 53px;
+    flex-basis: 100%;
+
+    &::before {
+      grid-column: 2 / -1;
+      grid-row: 1 / 4;
+      font-size: 200px;
+      align-self: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  @include desktop {
+    grid-template-columns: auto 1fr;
+    gap: 24px 62px;
+    padding-block: 47px 55px;
+    padding-inline: 52px 61px;
+    flex-basis: clamp(280px, 6vw, 570px);
+
+    &::before {
+      grid-column: auto;
+      grid-row: auto;
+      font-size: 100px;
+      align-self: auto;
+      margin-bottom: auto;
+    }
   }
 
   &--icon-lazy-cat::before {
@@ -38,20 +65,56 @@
   }
 }
 
+.program__title {
+  grid-column: 2 / -1;
+  grid-row: 1;
+  align-self: center;
+
+  @include fluid-text-mob(24, 36);
+  line-height: 1.54;
+  text-transform: uppercase;
+  color: var(--color-dark, inherit);
+
+  @include tablet {
+    grid-column: 1;
+    line-height: 1;
+  }
+
+  @include desktop {
+    grid-column: 2 / -1;
+  }
+}
+
 .program__description {
   padding-bottom: 23px;
+  grid-column: 1 / -1;
   box-shadow: 0 1px 0 0 var(--color-secondary-semidark, inherit);
   margin-bottom: 16px;
+
+  @include tablet {
+    padding-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: none;
+    grid-column: 1;
+  }
+
+  @include desktop {
+    grid-column: 1 / -1;
+  }
 }
 
 .program__link {
+  grid-column: 1 / -1;
   display: flex;
   align-items: center;
   width: max-content;
   column-gap: 25px;
   padding-block: 4px;
+  margin-block-start: -22px;
   font-family: var(--font-title,);
-  font-size: 16px;
+
+  @include fluid-text-mob(16, 20);
   line-height: 1;
   text-transform: uppercase;
   color: var(--color-dark, inherit);
@@ -76,5 +139,15 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @include tablet {
+    grid-column: 1;
+    padding-block: 9px;
+    margin-block-start: 0;
+  }
+
+  @include desktop {
+    grid-column: 1 / -1;
   }
 }

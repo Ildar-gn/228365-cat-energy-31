@@ -1,40 +1,115 @@
 .hero {
-  position: relative;
   color: var(--color-light, inherit);
+
 
   &::before {
     display: block;
     position: absolute;
+    top: 0;
     width: 100%;
-    height: 62%;
+    height: 367px;
     background-color: var(--color-accent,);
     z-index: -2;
     content: "";
+
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      display: block;
+      right: 0;
+      width: 50vw;
+      height: 694px;
+    }
+  }
+
+  @include desktop {
+    min-height: 571px;
+    margin-bottom: 82px;
   }
 }
 
 .hero__container {
-  padding-block: 27px 10px;
+  padding-block: 27px 20px;
   text-align: center;
+
+  @include tablet {
+    padding-block: 40px 0;
+    display: grid;
+    padding-inline-start: 120px;
+  }
+
+  @include desktop {
+    padding-block: 101px 101px;
+    padding-inline-start: 110px;
+    grid-template-columns: 50%;
+  }
 }
 
 .hero__title {
   margin-bottom: 25px;
-  font-size: 36px;
+
+  @include fluid-text-mob(36, 60);
   color: inherit;
+
+  @include tablet {
+    margin-bottom: 40px;
+    color: var(--color-dark, #000000);
+    text-align: start;
+  }
 }
 
 .hero__subtitle {
   margin-bottom: 30px;
-  font-size: 14px;
+
+  @include fluid-text-mob(14, 20);
   text-transform: uppercase;
   color: inherit;
+
+  @include tablet {
+    margin-bottom: 50px;
+    color: var(--color-dark, #000000);
+    text-align: start;
+  }
+}
+
+.hero__container picture {
+  @include tablet {
+    display: contents;
+  }
 }
 
 .hero__image {
-  //
+  @include mobile {
+    @include fluid-width-mob(280, 400);
+  }
+
+  @include tablet {
+    position: relative;
+    display: block;
+    // max-width: calc(100% + 90px);
+    max-width: 100vw;
+    margin-block-start: -83px;
+    margin-inline-start: -90px;
+    left: 50%;
+    transform: translateX(calc(-50% + 45px));
+    order: 4;
+  }
+
+  @include desktop {
+    position: absolute;
+    transform: translateX(-13%);
+  }
 }
 
 .hero__button {
-  //
+  @include fluid-text-mob (16, 20);
+
+  @include tablet {
+    width: max-content;
+    padding-block: 14px;
+    line-height: 1.3;
+    z-index: 1;
+  }
 }

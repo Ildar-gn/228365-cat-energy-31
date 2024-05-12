@@ -8,6 +8,26 @@
   }
 }
 
+@mixin fluid-text-mob($min, $max) {
+  font-size: clamp(#{$min}px, calc(#{$max} / 768 * 100vw), #{$max}px);
+}
+
+@mixin fluid-text-tab($min, $max) {
+  font-size: clamp(#{$min}px, calc(#{$max} / 1200 * 100vw), #{$max}px);
+}
+
+@mixin fluid-width-mob($min, $max) {
+  width: clamp(#{$min}px, calc(#{$max} / 768 * 100vw), #{$max}px);
+}
+
+@mixin fluid-width-tab($min, $max) {
+  width: clamp(#{$min}px, calc(#{$max} / 1200 * 100vw), #{$max}px);
+}
+
+@mixin fluid-gap-mob($min, $max) {
+  gap: clamp(#{$min}px, calc(#{$max} / 768 * 100vw), #{$max}px);
+}
+
 @mixin flex-center($isInline: false) {
   @if $isInline {
     display: inline-flex;

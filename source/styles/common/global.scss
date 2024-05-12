@@ -64,7 +64,8 @@ body {
   margin: 0;
   font-family: var(--font-basic, inherit);
   font-weight: 400;
-  font-size: 14px;
+
+  @include fluid-text-mob(14, 16);
   line-height: 1.29;
   color: var(--color-dark-400, inherit);
   background-color: var(--color-light, inherit);

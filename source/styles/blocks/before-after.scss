@@ -58,7 +58,10 @@
   cursor: ew-resize;
   transition: background-color 0.3s, border-color 0.3s;
 
-  &:hover,
+  @include hover {
+    background-color: var(--color-accent, #999999);
+  }
+
   &:focus-visible {
     background-color: var(--color-accent, #999999);
   }
@@ -78,7 +81,12 @@
     transition: border-color 0.3s;
   }
 
-  &:hover::before,
+  @include hover {
+    &::before {
+      border: 2px solid var(--color-accent, #999999);
+    }
+  }
+
   &:focus-visible::before {
     border: 2px solid var(--color-accent, #999999);
   }
@@ -102,7 +110,13 @@
     transition: background-color 0.3s;
   }
 
-  &:hover::after,
+  @include hover {
+    &::after {
+      background-color: var(--color-accent, #999999);
+    }
+  }
+
+
   &:focus-visible::after {
     background-color: var(--color-accent, #999999);
   }

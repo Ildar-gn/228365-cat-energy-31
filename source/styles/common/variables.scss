@@ -22,4 +22,8 @@
 
   --container-width: 1220px;
   --container-padding-x: 20px;
+
+  @include tablet {
+    --container-padding-x: 30px;
+  }
 }
