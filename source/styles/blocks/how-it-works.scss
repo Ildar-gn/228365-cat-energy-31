@@ -74,12 +74,10 @@
       position: absolute;
       font-family: var(--font-title, inherit);
       font-size: 280px;
-      line-height: 1;
-      height: 305px;
+      line-height: 0.72;
       color: var(--color-secondary, #fafafa);
-      top: 50%;
-      left: 47%;
-      transform: translateY(-50%);
+      top: 0;
+      right: 0;
       z-index: -1;
     }
   }

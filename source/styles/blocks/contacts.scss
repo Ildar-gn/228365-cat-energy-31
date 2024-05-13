@@ -61,6 +61,7 @@
 }
 
 .contacts__address {
+  grid-column: 2 / -1;
   display: flex;
   flex-direction: column;
   line-height: 1.42;
@@ -71,10 +72,22 @@
     align-items: flex-end;
     text-align: right;
     line-height: 1.25;
+    max-width: 200px;
+    margin-left: auto;
+  }
+
+  @include desktop {
+    max-width: min-content;
   }
 }
 
 .contacts__map {
+  min-height: 362px;
+
+  @include tablet {
+    min-height: 400px;
+  }
+
   @include desktop {
     grid-column: 1 / -1;
     grid-row: 1;

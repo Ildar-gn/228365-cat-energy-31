@@ -43,8 +43,7 @@ dl):where([class]) {
 /* Наследую свойства шрифта для полей ввода */
 :where(input,
 textarea,
-select,
-button):where([class]) {
+select):where([class]) {
   font-family: inherit;
 }
 

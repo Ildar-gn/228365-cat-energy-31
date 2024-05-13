@@ -1,6 +1,5 @@
 .programs {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
 
   @include fluid-gap-mob(20, 30);
   padding-block-end: 20px;
@@ -10,6 +9,7 @@
   }
 
   @include desktop {
+    grid-template-columns: repeat(2, 1fr);
     gap: 80px;
     padding-block-end: 71px;
   }

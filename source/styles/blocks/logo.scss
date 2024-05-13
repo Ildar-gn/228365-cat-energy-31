@@ -23,12 +23,18 @@
 }
 
 .logo__title {
-  display: block;
-  margin-inline: auto;
+  &--small {
+    display: block;
+    margin-inline: auto;
 
-  @include tablet {
-    margin-inline: 0;
+    @include tablet {
+      margin-inline: 0;
 
-    @include fluid-width-tab (101, 118);
+      @include fluid-width-tab (101, 118);
+    }
+  }
+
+  &--large {
+    //
   }
 }

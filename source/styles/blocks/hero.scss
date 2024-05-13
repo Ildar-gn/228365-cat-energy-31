@@ -88,18 +88,18 @@
   @include tablet {
     position: relative;
     display: block;
-    // max-width: calc(100% + 90px);
-    max-width: 100vw;
+    max-width: calc(100% + 90px);
     margin-block-start: -83px;
-    margin-inline-start: -90px;
-    left: 50%;
-    transform: translateX(calc(-50% + 45px));
+    left: calc(50% - 45px);
+    transform: translateX(-50%);
     order: 4;
   }
 
   @include desktop {
     position: absolute;
-    transform: translateX(-13%);
+    margin-block-start: -80px;
+    transform: translateX(-21.4%);
+    z-index: -1;
   }
 }
 

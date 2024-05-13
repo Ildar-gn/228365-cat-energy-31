@@ -2,8 +2,6 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 22px 20px;
-  flex-grow: 1;
-  flex-basis: clamp(280px, 6vw, 300px);
   padding-block: 24px;
   padding-inline: 20px;
   background-color: var(--color-secondary-light, inherit);
@@ -12,7 +10,6 @@
     content: "";
     display: block;
     flex-shrink: 0;
-    font-size: 50px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -28,7 +25,6 @@
     &::before {
       grid-column: 2 / -1;
       grid-row: 1 / 4;
-      font-size: 200px;
       align-self: center;
       margin-bottom: 10px;
     }
@@ -44,24 +40,47 @@
     &::before {
       grid-column: auto;
       grid-row: auto;
-      font-size: 100px;
       align-self: auto;
       margin-bottom: auto;
     }
   }
 
   &--icon-lazy-cat::before {
-    width: 1em;
-    height: 1.06em;
-    margin-top: -0.06em;
+    width: 50px;
+    height: 53px;
+    margin-top: -3px;
     background-image: url("../../icons/lazy-cat.svg");
+
+    @include tablet {
+      width: 200px;
+      height: 212px;
+      margin-top: -12px;
+    }
+
+    @include desktop {
+      width: 100px;
+      height: 106px;
+      margin-top: -6px;
+    }
   }
 
   &--icon-active-cat::before {
-    width: 1.36em;
-    height: 1em;
-    margin-inline: -0.18em -0.16em;
+    width: 67px;
+    height: 50px;
+    margin-inline: -9px -8px;
     background-image: url("../../icons/active-cat.svg");
+
+    @include tablet {
+      width: 268px;
+      height: 200px;
+      margin-inline: -36px -32px;
+    }
+
+    @include desktop {
+      width: 134px;
+      height: 100px;
+      margin-inline: -18px -16px;
+    }
   }
 }
 
