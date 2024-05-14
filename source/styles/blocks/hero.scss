@@ -37,13 +37,24 @@
   @include tablet {
     padding-block: 40px 0;
     display: grid;
-    padding-inline-start: 120px;
+
+    .hero__title,
+    .hero__subtitle,
+    .hero__button {
+      margin-inline-start: 90px;
+    }
   }
 
   @include desktop {
-    padding-block: 101px 101px;
-    padding-inline-start: 110px;
-    grid-template-columns: 50%;
+    padding-block: 101px 52px;
+    grid-template-columns: 1fr 1fr;
+
+    .hero__title,
+    .hero__subtitle,
+    .hero__button {
+      grid-column: 1;
+      margin-inline-start: 82px;
+    }
   }
 }
 
@@ -88,17 +99,16 @@
   @include tablet {
     position: relative;
     display: block;
-    max-width: calc(100% + 90px);
     margin-block-start: -83px;
-    left: calc(50% - 45px);
-    transform: translateX(-50%);
+    margin-inline: auto;
     order: 4;
   }
 
   @include desktop {
-    position: absolute;
-    margin-block-start: -80px;
-    transform: translateX(-21.4%);
+    grid-column: 2 / -1;
+    grid-row: 1 / 7;
+    margin-block-start: -81px;
+    margin-inline: -163px auto;
     z-index: -1;
   }
 }
