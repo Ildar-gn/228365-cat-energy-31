@@ -17,7 +17,7 @@
 }
 
 @mixin fluid-width-mob($min, $max) {
-  width: clamp(#{$min}px, calc(#{$max} / 768 * 100vw), #{$max}px);
+  min-width: clamp(#{$min}px, calc(#{$max} / 768 * 100vw), #{$max}px);
 }
 
 @mixin fluid-width-tab($min, $max) {
@@ -26,6 +26,10 @@
 
 @mixin fluid-gap-mob($min, $max) {
   gap: clamp(#{$min}px, calc(#{$max} / 768 * 100vw), #{$max}px);
+}
+
+@mixin fluid-height-mob($min, $max) {
+  min-height: clamp(#{$min}px, calc(#{$max} / 768 * 100vw), #{$max}px);
 }
 
 @mixin flex-center($isInline: false) {

@@ -1,29 +1,6 @@
 .hero {
   color: var(--color-light, inherit);
 
-
-  &::before {
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 367px;
-    background-color: var(--color-accent,);
-    z-index: -2;
-    content: "";
-
-    @include tablet {
-      display: none;
-    }
-
-    @include desktop {
-      display: block;
-      right: 0;
-      width: 50vw;
-      height: 694px;
-    }
-  }
-
   @include desktop {
     min-height: 571px;
     margin-bottom: 82px;
@@ -32,11 +9,15 @@
 
 .hero__container {
   padding-block: 27px 20px;
+  display: grid;
   text-align: center;
+
+  @include mobile {
+    //
+  }
 
   @include tablet {
     padding-block: 40px 0;
-    display: grid;
 
     .hero__title,
     .hero__subtitle,
@@ -56,6 +37,35 @@
       margin-inline-start: 82px;
     }
   }
+
+  &::before {
+    background-color: var(--color-accent,);
+    z-index: -2;
+    content: "";
+
+    @include mobile {
+      grid-column: 1;
+      grid-row: 1 / 4;
+      margin-inline: -20px;
+      margin-top: -27px;
+      width: calc(100% + 40px);
+
+      @include fluid-height-mob(302, 500);
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: 694px;
+    }
+  }
 }
 
 .hero__title {
@@ -63,6 +73,12 @@
 
   @include fluid-text-mob(36, 60);
   color: inherit;
+
+  @include mobile {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: self-end;
+  }
 
   @include tablet {
     margin-bottom: 40px;
@@ -78,6 +94,12 @@
   text-transform: uppercase;
   color: inherit;
 
+  @include mobile {
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+  }
+
   @include tablet {
     margin-bottom: 50px;
     color: var(--color-dark, #000000);
@@ -86,21 +108,21 @@
 }
 
 .hero__container picture {
-  @include tablet {
-    display: contents;
-  }
+  display: contents;
 }
 
 .hero__image {
+  display: block;
+  margin-inline: auto;
+
   @include mobile {
     @include fluid-width-mob(280, 400);
+    grid-row: 3 / 5;
+    grid-column: 1;
   }
 
   @include tablet {
-    position: relative;
-    display: block;
     margin-block-start: -83px;
-    margin-inline: auto;
     order: 4;
   }
 
@@ -109,12 +131,20 @@
     grid-row: 1 / 7;
     margin-block-start: -81px;
     margin-inline: -163px auto;
-    z-index: -1;
+    // z-index: -1;
   }
 }
 
 .hero__button {
   @include fluid-text-mob (16, 20);
+
+  @include mobile {
+    justify-self: center;
+
+    @include fluid-height-mob(40, 60);
+    width: 100%;
+    max-width: 375px;
+  }
 
   @include tablet {
     width: max-content;
