@@ -20,7 +20,6 @@
     padding-block: 77px 53px;
     padding-inline: 52px 63px;
     gap: 24px 53px;
-    flex-basis: 100%;
 
     &::before {
       grid-column: 2 / -1;
@@ -35,7 +34,6 @@
     gap: 24px 62px;
     padding-block: 47px 55px;
     padding-inline: 52px 61px;
-    flex-basis: clamp(280px, 6vw, 570px);
 
     &::before {
       grid-column: auto;

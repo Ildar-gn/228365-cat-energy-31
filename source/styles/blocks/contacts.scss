@@ -32,7 +32,7 @@
 .contacts__content {
   display: grid;
   grid-template-columns: 1fr minmax(50%, 1fr);
-  gap: 20px;
+  gap: 16px;
   padding-block: 26px;
 
   @include tablet {
@@ -46,6 +46,7 @@
     pointer-events: visible;
     background-color: var(--color-light, inherit);
     padding-inline: 80px;
+    max-width: 565px;
   }
 }
 
@@ -74,10 +75,6 @@
     line-height: 1.25;
     max-width: 200px;
     margin-left: auto;
-  }
-
-  @include desktop {
-    max-width: min-content;
   }
 }
 

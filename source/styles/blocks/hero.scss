@@ -8,7 +8,7 @@
 }
 
 .hero__container {
-  padding-block: 27px 20px;
+  padding-bottom: 20px;
   display: grid;
   text-align: center;
 
@@ -40,11 +40,11 @@
     content: "";
 
     @include mobile {
+      --hero-margin-x: -20px;
       grid-column: 1;
       grid-row: 1 / 4;
-      margin-inline: -20px;
-      margin-top: -27px;
-      width: calc(100% + 40px);
+      margin-inline: var(--hero-margin-x, inherit);
+      width: calc(100% - var(--hero-margin-x, inherit) * 2);
 
       @include fluid-height-mob(302, 500);
     }
@@ -58,7 +58,7 @@
       display: block;
       top: 0;
       right: 0;
-      width: 50vw;
+      width: 50%;
       height: 694px;
     }
   }
@@ -73,6 +73,7 @@
   @include mobile {
     grid-column: 1;
     grid-row: 1;
+    padding-top: 27px;
     align-self: self-end;
   }
 
@@ -112,7 +113,7 @@
   margin-inline: auto;
 
   @include mobile {
-    @include fluid-width-mob(280, 400);
+    @include fluid-width-mob(250, 400);
     grid-row: 3 / 5;
     grid-column: 1;
   }
