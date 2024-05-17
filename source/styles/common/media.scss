@@ -28,17 +28,3 @@ $desktop: 1200px;
   }
 }
 
-// Убирает залипание на тач-экранах
-@mixin hover {
-  @media (hover: hover) {
-    &:hover {
-      @content;
-    }
-  }
-
-  @media (hover: none) {
-    &:active {
-      @content;
-    }
-  }
-}

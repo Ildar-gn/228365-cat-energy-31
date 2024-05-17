@@ -78,7 +78,7 @@
 }
 
 .navigation__link {
-  font-family: var(--font-title,);
+  font-family: var(--font-title, inherit);
   font-size: 20px;
   width: 100%;
   display: inline-block;
@@ -86,20 +86,28 @@
   line-height: 1;
   text-transform: uppercase;
   box-shadow: 0 -1px 0 0 var(--color-secondary-light, inherit), inset 0 -1px 0 0 var(--color-secondary-light, inherit);
+  transition: color 0.3s;
 
   @include tablet {
     padding-block: 28px 23px;
     padding-inline: 16.5px;
+
+    &:hover,
+    &:focus-visible {
+      color: rgba(var(--color-dark-rgb, #999999), 0.6);
+    }
+
+    &:active {
+      color: rgba(var(--color-dark-rgb, #999999), 0.3);
+    }
 
     @include fluid-text-tab(18, 20);
     line-height: 1.33;
     box-shadow: none;
     position: relative;
 
-    @include hover {
-      &::after {
-        width: calc(100% - 33px);
-      }
+    &:hover::after {
+      width: calc(100% - 33px);
     }
 
     &::after {
@@ -116,8 +124,17 @@
   }
 
   @include desktop {
+    .navigation--invert &:hover,
+    .navigation--invert &:focus-visible {
+      color: rgba(var(--color-light-rgb, #dddddd), 0.6);
+    }
+
+    .navigation--invert &:active {
+      color: rgba(var(--color-light-rgb, #dddddd), 0.3);
+    }
+
     .navigation--invert &::after {
-      background-color: currentColor;
+      background-color: var(--color-light, inherit);
     }
   }
 

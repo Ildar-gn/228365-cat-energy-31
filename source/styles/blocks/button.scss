@@ -25,10 +25,7 @@
   &--primary {
     @include button(var(--color-light), var(--color-accent));
 
-    @include hover {
-      background-color: var(--color-accent-semidark, inherit);
-    }
-
+    &:hover,
     &:focus-visible {
       background-color: var(--color-accent-semidark, inherit);
     }
