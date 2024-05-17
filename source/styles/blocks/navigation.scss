@@ -59,6 +59,17 @@
       z-index: 1;
     }
   }
+
+  &--nojs {
+    --hero-margin-x: -20px;
+    margin-inline: var(--hero-margin-x, inherit);
+    width: calc(100% - var(--hero-margin-x, inherit) * 2);
+    position: relative;
+    top: 15px;
+    opacity: 1;
+    transform: none;
+    z-index: 2;
+  }
 }
 
 
