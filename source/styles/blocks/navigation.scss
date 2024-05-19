@@ -92,6 +92,11 @@
     padding-block: 28px 23px;
     padding-inline: 16.5px;
 
+    @include fluid-text-tab(18, 20);
+    line-height: 1.33;
+    box-shadow: none;
+    position: relative;
+
     &:hover,
     &:focus-visible {
       color: rgba(var(--color-dark-rgb, #999999), 0.6);
@@ -100,11 +105,6 @@
     &:active {
       color: rgba(var(--color-dark-rgb, #999999), 0.3);
     }
-
-    @include fluid-text-tab(18, 20);
-    line-height: 1.33;
-    box-shadow: none;
-    position: relative;
 
     &:hover::after {
       width: calc(100% - 33px);

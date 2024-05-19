@@ -28,6 +28,10 @@
   gap: clamp(#{$min}px, calc(#{$max} / 768 * 100vw), #{$max}px);
 }
 
+@mixin fluid-gap-tab($min, $max) {
+  gap: clamp(#{$min}px, calc(#{$max} / 1200 * 100vw), #{$max}px);
+}
+
 @mixin fluid-height-mob($min, $max) {
   min-height: clamp(#{$min}px, calc(#{$max} / 768 * 100vw), #{$max}px);
 }
