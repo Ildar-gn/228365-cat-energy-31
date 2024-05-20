@@ -45,6 +45,7 @@
 
   @include tablet {
     margin-bottom: 55px;
+    line-height: 1.5;
   }
 
   @include desktop {
@@ -67,7 +68,7 @@
 
   @include desktop {
     grid-template-columns: 162px 162px;
-    gap: 55px 43px;
+    gap: 51px 43px;
     margin-bottom: -10px;
   }
 }
