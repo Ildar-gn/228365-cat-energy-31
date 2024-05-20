@@ -106,7 +106,8 @@
       color: rgba(var(--color-dark-rgb, #999999), 0.3);
     }
 
-    &:hover::after {
+    &:hover::after,
+    &:focus-visible::after {
       width: calc(100% - 33px);
     }
 
