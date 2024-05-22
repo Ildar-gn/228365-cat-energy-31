@@ -21,6 +21,8 @@
 }
 
 .form__field {
+  caret-color: var(--color-accent, #55b738);
+
   @include tablet {
     flex-grow: 1;
   }
