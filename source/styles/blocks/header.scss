@@ -28,7 +28,9 @@
 }
 
 .header__logo {
-  //
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .header__navigation {

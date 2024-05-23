@@ -108,13 +108,9 @@
 
 .live-example__term {
   @include fluid-text-mob(14, 20);
-  line-height: 1.42;
+  line-height: 1;
   text-transform: uppercase;
   color: var(--color-dark, inherit);
-
-  @include tablet {
-    line-height: 1;
-  }
 
   &.title {
     padding-block: 15px 17px;

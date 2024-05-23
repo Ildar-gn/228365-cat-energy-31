@@ -27,7 +27,10 @@
 }
 
 .footer__logo {
-  max-width: 162px;
+  @include tablet {
+    max-width: 162.64px;
+    width: 100%;
+  }
 }
 
 
