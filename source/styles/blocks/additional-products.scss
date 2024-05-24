@@ -17,7 +17,7 @@
 
 .additional-products__container {
   display: grid;
-  gap: 35px;
+  gap: 36px;
 
   @include tablet {
     @include fluid-gap-tab(70, 80);
