@@ -20,7 +20,7 @@
 
 
   @include tablet {
-    padding: 63px 88px 73px;
+    padding: 70px 88px;
     min-height: 200px;
     max-width: 708px;
     width: 100%;
@@ -36,7 +36,7 @@
   }
 
   @include desktop {
-    padding: 63px 40px 45px;
+    padding: 63px 40px 40px;
     grid-row: 2;
     grid-column: 2 / 3;
     background-image:
@@ -72,14 +72,24 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
+
+    @include tablet {
+      width: 59px;
+      margin-block-start: -8px;
+    }
+
+    @include desktop {
+      width: 59px;
+      margin-block-start: 0;
+    }
   }
 
   @include tablet {
     flex-direction: row;
     text-align: start;
     max-width: none;
-    width: 494px;
-    column-gap: 275px;
+    width: 499px;
+    column-gap: 276px;
   }
 
   @include desktop {

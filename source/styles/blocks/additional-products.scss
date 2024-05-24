@@ -11,6 +11,7 @@
   }
 
   @include desktop {
+    padding-block: 0 96px;
     background-position: 0 18px;
   }
 }

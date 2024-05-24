@@ -29,7 +29,7 @@
   @include tablet {
     @include fluid-text-tab(32, 40);
     margin-inline-start: 40px;
-    margin-block-end: 66px;
+    margin-block-end: 67px;
   }
 
   @include desktop {
@@ -46,7 +46,9 @@
   text-align: center;
 
   @include tablet {
+    margin-block-end: 22px;
     padding-inline: 38px;
     text-wrap: wrap;
+    line-height: 1.33;
   }
 }
