@@ -157,7 +157,7 @@
       <!-- map -->
       <div class="contacts__map map">
         <span class="visually-hidden">Наше местоположение на карте</span>
-        <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e01fcb9e2d8c07c526bb53341fe31b72de6b512a0f40072987b74fc0b1c7dca&amp;source=constructor" width="1440" height="400" allowfullscreen loading="lazy" title="Карта с нашим местоположением"></iframe>
+        <div class="map__frame" role="application" id="map-placeholder"></div>
         <div class="map__fallback">
           <picture>
             <source width="1440" height="400" media="(min-width: 1200px)" srcset="images/map/map__image_large@1x.webp 1x, images/map/map__image_large@2x.webp 2x" type="image/webp">
@@ -210,6 +210,7 @@
 
   <script src="scripts/index.js" defer></script>
   <script src="scripts/before-after.js" defer></script>
+  <script src="scripts/map.js" defer></script>
 </body>
 
 </html>
