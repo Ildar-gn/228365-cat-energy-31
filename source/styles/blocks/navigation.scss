@@ -35,10 +35,11 @@
     width: auto;
     top: 0;
     left: auto;
-    margin-inline-end: -16.5px;
+    margin-inline-end: -10px;
   }
 
   @include desktop {
+    margin-inline-end: -16px;
     background-color: transparent;
     color: currentColor;
   }

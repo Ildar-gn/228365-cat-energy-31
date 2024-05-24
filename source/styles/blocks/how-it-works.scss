@@ -2,7 +2,7 @@
   padding-block-end: 49px;
 
   @include tablet {
-    padding-block-end: 57px;
+    padding-block-end: 59px;
   }
 
   @include desktop {
@@ -31,7 +31,7 @@
   @include tablet {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250, 1fr));
-    gap: 60px;
+    gap: 90px 60px;
     counter-reset: step-counter;
     line-height: 1.5;
   }
