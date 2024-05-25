@@ -11,6 +11,14 @@ window.addEventListener('pageshow', (event) => {
       iframe.title = 'Карта с нашим местоположением';
       iframe.className = 'map__frame';
       document.getElementById('map-placeholder').appendChild(iframe);
+
+      // Обработчик ошибки загрузки iframe
+      iframe.addEventListener('error', () => {
+        // Получаем элемент .map__image
+        const mapImage = document.querySelector('.map__image');
+        // Устанавливаем свойство display на block
+        mapImage.style.display = 'block';
+      });
     }, 3000);
   }
 });
