@@ -1,10 +1,10 @@
-/* в этот файл добавляет скрипты */
+/* Выподающее меню */
 document.addEventListener('DOMContentLoaded', () => {
   const toggleButton = document.querySelector('.navigation__toggle');
   const menuList = document.querySelector('.navigation__list');
   const toggleIcon = document.querySelector('.toggle-icon'); // Получаем ссылку на .toggle-icon
 
-  // menuList.classList.remove('navigation__list--nojs');
+  menuList.classList.remove('navigation__list--nojs');
 
   toggleButton.addEventListener('click', () => {
     // Переключение классов, которые отвечают за открытие/закрытие меню и изменение вида иконки
