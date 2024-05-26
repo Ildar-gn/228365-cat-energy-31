@@ -49,7 +49,7 @@ img {
   color: inherit;
 }
 
-/* Делаю кастомное выделение текста */
+/* Делаю кастомное выделение текста и убираю выделение у изображений */
 ::selection {
   background: var(--color-accent-semidark, inherit);
   color: var(--color-light, inherit);
