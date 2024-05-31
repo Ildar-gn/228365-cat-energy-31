@@ -30,6 +30,7 @@
   transform-origin: center top;
   transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
   transition-delay: 0s, 0.3s;
+  will-change: transform, opacity;
   z-index: 2;
 
   @include tablet {
