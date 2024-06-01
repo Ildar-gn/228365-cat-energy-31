@@ -34,10 +34,6 @@
   will-change: transform, opacity;
   z-index: 2;
 
-  @include mobile {
-    visibility: hidden;
-  }
-
   @include tablet {
     position: relative;
     flex-direction: row;
@@ -56,7 +52,6 @@
 
   &--open {
     transform: scaleY(1) translateY(0%);
-    visibility: visible;
     opacity: 1;
   }
 
@@ -81,7 +76,6 @@
       top: 15px;
       opacity: 1;
       transform: none;
-      visibility: visible;
       z-index: 2;
     }
   }
