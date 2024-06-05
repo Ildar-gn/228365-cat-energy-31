@@ -132,7 +132,7 @@
     @include desktop {
       flex-direction: row;
       justify-content: flex-start;
-      column-gap: 63px;
+      column-gap: 65px;
       grid-column: 1 / -1;
       grid-row: 2;
       margin-block-end: auto;
@@ -145,6 +145,7 @@
   line-height: 1;
   text-transform: uppercase;
   color: var(--color-dark, inherit);
+  margin-inline-start: 0;
 
   &.title {
     padding-block: 15px 17px;
