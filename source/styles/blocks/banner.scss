@@ -9,10 +9,10 @@
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85) 100%, #68b738),
     image-set(
-      "../images/backgrounds/banner-bg-normal@1x.webp" 1x,
-      "../images/backgrounds/banner-bg-normal@2x.webp" 2x,
-      "../images/backgrounds/banner-bg-normal@1x.jpg" 1x,
-      "../images/backgrounds/banner-bg-normal@2x.jpg" 2x
+      url("../images/backgrounds/banner-bg-normal@1x.webp") type("image/webp") 1x,
+      url("../images/backgrounds/banner-bg-normal@2x.webp") type("image/webp") 2x,
+      url("../images/backgrounds/banner-bg-normal@1x.jpg") type("image/jpeg") 1x,
+      url("../images/backgrounds/banner-bg-normal@2x.jpg") type("image/jpeg") 2x
     );
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -28,10 +28,10 @@
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85) 100%, #68b738),
       image-set(
-        "../images/backgrounds/banner-bg-wide@1x.webp" 1x,
-        "../images/backgrounds/banner-bg-wide@2x.webp" 2x,
-        "../images/backgrounds/banner-bg-wide@1x.jpg" 1x,
-        "../images/backgrounds/banner-bg-wide@2x.jpg" 2x
+        url("../images/backgrounds/banner-bg-wide@1x.webp") type("image/webp") 1x,
+        url("../images/backgrounds/banner-bg-wide@2x.webp") type("image/webp") 2x,
+        url("../images/backgrounds/banner-bg-wide@1x.jpg") type("image/jpeg") 1x,
+        url("../images/backgrounds/banner-bg-wide@2x.jpg") type("image/jpeg") 2x
       );
   }
 
@@ -42,10 +42,10 @@
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85) 100%, #68b738),
       image-set(
-        "../images/backgrounds/banner-bg-normal@1x.webp" 1x,
-        "../images/backgrounds/banner-bg-normal@2x.webp" 2x,
-        "../images/backgrounds/banner-bg-normal@1x.jpg" 1x,
-        "../images/backgrounds/banner-bg-normal@2x.jpg" 2x
+        url("../images/backgrounds/banner-bg-normal@1x.webp") type("image/webp") 1x,
+        url("../images/backgrounds/banner-bg-normal@2x.webp") type("image/webp") 2x,
+        url("../images/backgrounds/banner-bg-normal@1x.jpg") type("image/jpeg") 1x,
+        url("../images/backgrounds/banner-bg-normal@2x.jpg") type("image/jpeg") 2x
       );
     background-position: 0 0, calc(100% + 5px) 50%;
   }
