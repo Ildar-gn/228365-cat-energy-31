@@ -7,3 +7,4 @@ raw/**/*.jpeg
 raw/**/*.png
 raw/**/*.svg
 !raw/**/README.md
+test.html

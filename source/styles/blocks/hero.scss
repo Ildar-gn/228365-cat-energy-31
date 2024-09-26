@@ -43,10 +43,10 @@
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85) 100%, #68b738),
       image-set(
-        url("../images/backgrounds/hero-bg-small@1x.webp") type("image/webp") 1x,
-        url("../images/backgrounds/hero-bg-small@2x.webp") type("image/webp") 2x,
-        url("../images/backgrounds/hero-bg-small@1x.jpg") type("image/jpeg") 1x,
-        url("../images/backgrounds/hero-bg-small@2x.jpg") type("image/jpeg") 2x
+        url("../../images/backgrounds/hero-bg-small@1x.webp") 1x type("image/webp"),
+        url("../../images/backgrounds/hero-bg-small@2x.webp") 2x type("image/webp"),
+        url("../../images/backgrounds/hero-bg-small@1x.jpg") 1x type("image/jpeg"),
+        url("../../images/backgrounds/hero-bg-small@2x.jpg") 2x type("image/jpeg")
       );
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -67,10 +67,10 @@
       background-image:
         linear-gradient(rgba(104, 183, 56, 0.85) 100%, #68b738),
         image-set(
-          url("../images/backgrounds/hero-bg-medium@1x.webp") type("image/webp") 1x,
-          url("../images/backgrounds/hero-bg-medium@2x.webp") type("image/webp") 2x,
-          url("../images/backgrounds/hero-bg-medium@1x.jpg") type("image/jpeg") 1x,
-          url("../images/backgrounds/hero-bg-medium@2x.jpg") type("image/jpeg") 2x
+          url("../../images/backgrounds/hero-bg-medium@1x.webp") 1x type("image/webp"),
+          url("../../images/backgrounds/hero-bg-medium@2x.webp") 2x type("image/webp"),
+          url("../../images/backgrounds/hero-bg-medium@1x.jpg") 1x type("image/jpeg"),
+          url("../../images/backgrounds/hero-bg-medium@2x.jpg") 2x type("image/jpeg")
         );
     }
 
@@ -86,10 +86,10 @@
       background-image:
         linear-gradient(rgba(104, 183, 56, 0.85) 100%, #68b738),
         image-set(
-          url("../images/backgrounds/hero-bg-large@1x.webp") type("image/webp") 1x,
-          url("../images/backgrounds/hero-bg-large@2x.webp") type("image/webp") 2x,
-          url("../images/backgrounds/hero-bg-large@1x.jpg") type("image/jpeg") 1x,
-          url("../images/backgrounds/hero-bg-large@2x.jpg") type("image/jpeg") 2x
+          url("../../images/backgrounds/hero-bg-large@1x.webp") 1x type("image/webp"),
+          url("../../images/backgrounds/hero-bg-large@2x.webp") 2x type("image/webp"),
+          url("../../images/backgrounds/hero-bg-large@1x.jpg") 1x type("image/jpeg"),
+          url("../../images/backgrounds/hero-bg-large@2x.jpg") 2x type("image/jpeg")
         );
       background-position: 0 50%;
       width: 50%;
